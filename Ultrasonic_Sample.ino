@@ -32,10 +32,10 @@ void loop() {
   inches = (duration/2) /74; // divide by 74 or multiply by 0.0135
 
   Serial.print(inches);
-  Serial.print("in, ");
+  Serial.print("in, \n ");
   Serial.print(cms);
-  Serial.print("cm, ");
+  Serial.print("cm, \n ");
 
-delay(250);
+delay(1000);
 
 }
