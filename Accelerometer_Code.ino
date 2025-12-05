@@ -23,5 +23,5 @@ void loop() {
   Serial.print("  Y: "); Serial.print(event.acceleration.y);
   Serial.print("  Z: "); Serial.println(event.acceleration.z);
 
-  delay(200);
+  delay(1000);
 }
