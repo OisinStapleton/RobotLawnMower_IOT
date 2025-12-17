@@ -1,3 +1,4 @@
+// Code to return X,Y and Z co-ordinates of an accelerometer.
 #include <Wire.h>
 #include <Adafruit_MMA8451.h>
 #include <Adafruit_Sensor.h>
@@ -25,3 +26,4 @@ void loop() {
 
   delay(1000);
 }
+
