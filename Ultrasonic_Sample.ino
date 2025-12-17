@@ -1,5 +1,10 @@
+// Code to measure distance from Ultrasonic sensor, returns value in inches and cm.
+#define BLYNK_TEMPLATE_NAME "IOT "
+#define BLYNK_AUTH_TOKEN "0MyzSmaUNFVEr3tIEkPrEG5QhWcsWu64"
+
+
 const int TRIG_PIN = 12; //Trigger
-const int ECHO_PIN =14; //Echo
+const int ECHO_PIN =13; //Echo
 long duration; //used to measure time from transmission while echo returns
 float cms, inches;
 
@@ -32,9 +37,9 @@ void loop() {
   inches = (duration/2) /74; // divide by 74 or multiply by 0.0135
 
   Serial.print(inches);
-  Serial.print("in, \n ");
+  Serial.print("in,\n ");
   Serial.print(cms);
-  Serial.print("cm, \n ");
+  Serial.print("cm,\n ");
 
 delay(1000);
 
