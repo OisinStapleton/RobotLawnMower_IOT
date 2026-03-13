@@ -5,68 +5,47 @@
   <meta charset="utf-8"> 
   <!-- Make page respond to screen size !--> 
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"> 
-  
+  <link rel ="stylesheet" type = "text/css" href="Webserver.css">
 <!--Include a Title. Used by Search Engines --> 
 <title> IOT Reading WebServer </title> 
-<style> 
-    
-   // webserver example
-   body {        
- background-color: green; 
- } 
- .flex-Container{ 
-        display: flex; 
-        flex-direction: column; 
-        background-color: green; 
-        align-items: center; 
-      } 
-    h1{ 
-    font: bold; 
-    font-size: 40px; 
-    font-family: Arial; 
-    color: black; 
- text-align: center; 
-  } 
-  p{ 
-    font-size: 25px; 
-    font-family: Arial; 
-    color: black; 
- text-align: center; 
-   }   
-  th, td { 
-    font-size: 25px; 
-    padding: 8px; 
-    text-align: left; 
 
- 
-    border-bottom: 1px solid #ddd; 
-}
-</style> 
 </head> 
+
+
  <body> 
-  <div class="flex-Container"> 
-  <h1> Robot Lawnmower Website </h1> 
-       
-  <p>Welcome to my website displaying key values from my robot lawnmower</p> 
+  <div class="container"> 
+    <div class = "header">
+      <h1> IOT ROBOT LAWNMOWER READINGS </h1> 
+    </div>
+  
+       <div class = "description">
+        Welcome to my website displaying key values from my robot lawnmower.
+        This IOT robot lawnmower will be able to simulate efficient lawnmowing whilst making sure no collisions occur.
+        Website functionality includes live camera view and key reading panels that change in real time. 
+       </div>
+
+       <div class = "sensor-row">
+
+       <div class = "card">
+        <h3>Accelerometer readings</h3>
+        <p class = "value">X: 0<br>Y: 0 <br>Z: 0</p>
+       </div>
+
+       <div class = "card">
+        <h3>Ultrasonic Readings</h3>
+        <p class = "value">Distance: 0cm</p>
+       </div>
+
+       <div class = "card">
+        <h3>Battery Percentage</h3>
+        <p class = "value">100%</p>
+       </div>
+       </div>
+  
+       <div class = "camera">
+        Cam View
+       </div>
      
-  <table> 
-        <tr> 
-          <th>Sensor</th> 
-          <th>Value</th> 
-          <th>Unit</th> 
-        </tr> 
-        <tr> 
-          <td>Distance</td> 
-          <td> 22</td> 
-         <td>cm</td> 
-        </tr> 
-        <tr>
-            <td>Location</td>
-            <td>Value</td>
-            <td></td>
-        </tr>
-      </table> 
-     </div> 
  </body> 
 </html> 
   
